@@ -1,0 +1,59 @@
+.video {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.in-video {
+  padding: 1vw;
+}
+
+@media (max-width: 480px) {
+  .video {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Form Styles */
+.url-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.url-form label {
+  margin-bottom: 10px;
+}
+
+.url-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.url-form button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.url-form button:hover {
+  background-color: #2980b9;
+}
+
+.dle-btn {
+  background-color: rgb(236, 60, 60);
+  color: white;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin-left: 44%;
+  width: 100px;
+  border: 2px solid rgb(18, 18, 18);
+}

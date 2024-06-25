@@ -1,0 +1,154 @@
+/* Base Styles */
+.about-us,
+.join-us {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-us h2 {
+  color: #2a71d0; /* A vibrant blue for main headings */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reason h3 {
+  color: #1a5276; /* A darker shade of blue for sub-headings */
+}
+
+.reason p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #e8e5e5; /* Light grey background */
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.reason {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reason:hover {
+  transform: scale(1.05);
+}
+
+.reason h3 {
+  margin-bottom: 10px;
+}
+
+/* Responsive Grid for About Us Section on larger screens */
+@media (min-width: 768px) {
+  .reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Join Us Section */
+.join-us {
+  background-color: #eaf7ff; /* Light blue background */
+  padding: 40px 20px;
+}
+
+.join-section,
+.contact-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* 
+.about-us h2 {
+  color: #1a5276; 
+  margin-bottom: 20px;
+} */
+
+.reason p {
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 1.8em;
+  }
+
+  .p {
+    font-size: 1em;
+  }
+}
+
+/* Responsive Grid for Join Us Section on larger screens */
+@media (min-width: 992px) {
+  .join-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.h22 {
+  font-family: "Arial", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  /* Optional: Add text shadow for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .h22 {
+    font-size: 2rem;
+    margin: 15px 0;
+  }
+}
+
+/* Additional Styling for Attraction (Example) */
+.h22::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #555;
+  margin-bottom: 10px;
+}
+
+#smallimg {
+  object-fit: contain;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  #jw-history,
+  #jw-histor,
+  #jw-histo {
+    display: flex;
+    flex-direction: row;
+  }
+  .jw-img {
+    width: 600px;
+  }
+  .jw-para {
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}

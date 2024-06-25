@@ -1,0 +1,215 @@
+.playerListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 15px; /* Adjust the gap between items */
+}
+
+.playerCard {
+  border: 2px solid #007bff; /* A brighter border color */
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%; /* Make cards responsive to container width */
+  width: 300px; /* Maximum width for larger screens */
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.phoneslot {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.none {
+  border: 2px solid #007bff; /* A brighter border color */
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%; /* Make cards responsive to container width */
+  width: 300px; /* Maximum width for larger screens */
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 498px) {
+  .playerCard {
+    display: none;
+  }
+
+  .slot {
+    display: none;
+  }
+
+  .phoneslot {
+    display: flex;
+    visibility: visible;
+  }
+
+  .phoneslot:hover {
+    cursor: pointer;
+  }
+}
+
+.flex {
+  position: absolute;
+  right: 5%;
+}
+
+.playerCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling for clarity */
+.playerTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff; /* Matching the border color */
+  margin-bottom: 5px;
+  width: 175px; /* Fixed width */
+  overflow-x: auto; /* Enables horizontal scrolling for overflow content */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  
+    &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Detail text styling for readability */
+.playerDetails {
+  font-size: 16px;
+  color: #333;
+}
+
+.slotdiv {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.slot {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+}
+
+.slot:hover {
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .slotdiv {
+    max-width: none;
+    width: auto;
+    padding: 15px;
+  }
+
+  .slot {
+    font-size: 18px;
+  }
+}
+
+/* Advanced CSS for hover and focus states for better user interaction */
+.slotdiv:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slotdiv:focus-within {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-8 {
+  background-image: linear-gradient(
+    to right,
+    #6a11cb 0%,
+    #2575fc 100%
+  ); /* Gradient background */
+  color: white; /* White text for contrast */
+  border: none; /* Remove border */
+  padding: 6px 14px; /* Adequate padding for usability */
+  font-size: 16px; /* Legible font size */
+  cursor: pointer; /* Cursor indicates action */
+  border-radius: 30px; /* Rounded corners for a pill shape */
+  display: inline-flex; /* Flex to align icon and text */
+  align-items: center; /* Center items vertically */
+  gap: 8px; /* Space between text and icon */
+  transition: all 0.3s ease; /* Smooth transitions for background and shadow */
+  outline: none; /* Remove outline to handle focus state manually */
+}
+
+.btn-8:hover {
+  background-image: linear-gradient(
+    to right,
+    #2575fc 0%,
+    #6a11cb 100%
+  ); /* Invert gradient on hover */
+
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.btn-8:active {
+  background-image: linear-gradient(
+    to right,
+    #6a11cb 0%,
+    #2575fc 100%
+  ); /* Revert gradient on click */
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5); /* Smaller shadow for pressed effect */
+  transform: scale(0.95); /* Slightly decrease size */
+}
+
+.btn-8:focus-visible {
+  box-shadow: 0 0 0 3px rgba(95, 3, 248, 0.5); /* Focus outline for accessibility */
+  position: relative; /* Ensure the focus ring doesn't get cut off */
+}
+
+.nn {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+.img-7 {
+  height: 40px;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.round-image {
+  width: 50px; /* Set the width */
+  height: 50px; /* Set the height */
+  border-radius: 50%; /* Make it round */
+  object-fit: cover; /* This ensures the image covers the area without losing its aspect ratio */
+  border: 2px solid #007bff;
+}
+
+.book {
+  font-size: 20px;
+  position: absolute;
+  right: 9%;
+}

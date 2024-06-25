@@ -1,0 +1,279 @@
+.contact-page-container {
+  display: flex;
+  gap: 50px;
+  padding: 40px 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-form-container {
+  margin-top: 5vh;
+  flex: 0 0 45%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.contact-form-container h2 {
+  color: #35495e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cinput,
+.text,
+.cbutton {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text {
+  height: 120px;
+  resize: none;
+}
+
+.cbutton {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cbutton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.locations-container {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.location:hover {
+  transform: translateY(-5px);
+}
+
+.location h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.location p {
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 960px) {
+  .contact-page-container {
+    flex-direction: column;
+  }
+
+  .contact-form-container,
+  .locations-container {
+    flex: 0 0 100%;
+  }
+
+  .contact-form-container,
+  .locations-container {
+    margin-bottom: 20px;
+  }
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+#a {
+  text-decoration: none;
+  color: white;
+}
+
+.google-map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.google-map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .google-map-container {
+    padding-top: 75%; /* Adjust the aspect ratio for smaller devices */
+  }
+}
+
+.tem {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.checkbox-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .checkbox-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .checkbox-container {
+    font-size: 16px;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  border-color: red; /* Optional: highlight the border to indicate an error */
+}
+
+.p {
+  font-size: x-large;
+  color: #696767;
+  margin: 0%;
+  margin-left: 16px;
+}

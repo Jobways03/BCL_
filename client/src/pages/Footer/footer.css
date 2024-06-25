@@ -1,0 +1,16 @@
+.navlink {
+  text-decoration: none;
+}
+
+.emaill {
+  width: 200px;
+  overflow-x: scroll;
+  scrollbar-width: 0.1px;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

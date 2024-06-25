@@ -1,0 +1,217 @@
+.design {
+  padding: 0%;
+  margin: 0%;
+  background-color: rgb(215, 227, 244);
+  width: 100%;
+  background-image: url("./design.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  padding: 8%;
+}
+
+.inner-design {
+  border: 1px solid rgb(100, 98, 98);
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.indesign {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.design1 {
+  width: fit-content;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+}
+
+.dnames {
+  border: 1px solid rgb(255, 140, 0);
+  padding: 1px 15px;
+  border-radius: 2px;
+  font-weight: 500;
+  width: 130px;
+  text-align: center;
+}
+
+.lined {
+  width: 90px;
+  height: 1px;
+  background-color: rgb(255, 140, 0);
+  margin-top: 12px;
+}
+
+.circle {
+  background-color: rgb(255, 140, 0);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-top: 7.5px;
+}
+
+.ddays {
+  font-size: 22px;
+  padding: 20px 0px;
+  font-weight: 700;
+}
+
+.design2 {
+  margin-left: 40px;
+}
+
+.dven2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+.dlogo1 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.dlogo2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.dteam1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 13px;
+  width: 200px;
+  letter-spacing: -1px;
+  overflow-x: scroll;
+  scrollbar-width: 0.1px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 25px;
+  text-transform: uppercase;
+}
+
+.dteam2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 13px;
+  width: 200px;
+  text-align: right;
+  letter-spacing: -1px;
+  overflow-x: scroll;
+  scrollbar-width: 0.1px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 25px;
+  text-transform: uppercase;
+}
+
+.result {
+  font-weight: 800;
+  font-size: larger;
+  margin-top: 40px;
+  text-transform: uppercase;
+  width: 170px;
+}
+
+@media screen and (max-width: 768px) {
+  .indesign {
+    flex-direction: column;
+  }
+}
+
+.scores {
+  width: 100px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.scores2 {
+  width: 200px;
+  margin-top: 5px;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Base styles are already defined, targeting larger screens by default */
+
+/* Adjustments for tablets and below */
+@media screen and (max-width: 1024px) {
+  .indesign {
+    padding: 15px 20px;
+  }
+
+  .design1,
+  .design2,
+  .design3 {
+    width: 100%; /* Ensures components don't overflow their container */
+  }
+
+  .ddays,
+  .dteam1,
+  .dteam2,
+  .result {
+    font-size: 18px; /* Slightly reduce font size for readability */
+  }
+
+  .dven2 {
+    flex-wrap: wrap; /* Allows team info to stack on smaller screens */
+    justify-content: center; /* Centers team info blocks */
+  }
+
+  .dlogo1,
+  .dlogo2 {
+    height: 50px;
+    width: 50px; /* Slightly reduce logos for space efficiency */
+  }
+}
+
+/* Adjustments for mobile phones */
+@media screen and (max-width: 768px) {
+  .inner-design {
+    border: none; /* Optional: Removes border for a cleaner look on mobile */
+    border-radius: 0; /* Optional: Adjusts for edge-to-edge design on mobile */
+  }
+
+  .indesign {
+    flex-direction: column;
+    padding: 10px; /* Reduces padding to use space more efficiently */
+  }
+
+  .design2 {
+    margin-left: 0; /* Removes margin since layout is now vertical */
+  }
+
+  .ddays,
+  .dteam1,
+  .dteam2,
+  .result {
+    font-size: 16px; /* Further reduce font size for small screens */
+  }
+
+  .dlogo1,
+  .dlogo2 {
+    height: 40px;
+    width: 40px; /* Reduces logo sizes to fit smaller screens */
+  }
+
+  .scores,
+  .scores2 {
+    font-size: 14px; /* Adjusts score font size for consistency */
+  }
+}

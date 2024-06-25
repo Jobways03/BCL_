@@ -1,0 +1,363 @@
+/* General Styles */
+.home-page {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Utilize a modern, clean layout */
+.section-heading,
+.heading {
+  color: #2a71d0; /* A vibrant blue for headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-content,
+.sub-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+  .section-content,
+  .sub-heading {
+    font-size: 1em;
+  }
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #f0f0f0; /* Light grey background for contrast */
+  padding: 40px 20px;
+}
+
+.heading {
+  font-size: 2.5em;
+}
+
+.sub-heading {
+  color: #555;
+  font-style: italic;
+}
+
+/* Unique Section */
+.unique-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+/* Platform Section */
+.platform-section {
+  background-color: #e6f7ff; /* Light blue for a fresh look */
+  padding: 0px 20px;
+  padding-top: 40px;
+}
+
+/* Beyond Section */
+.beyond-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+/* Play Section */
+.play-section {
+  background-color: #fdebd0; /* Soft orange for a playful vibe */
+  padding: 0px 20px;
+  padding-top: 40px;
+}
+
+/* Join Section */
+.join-section {
+  background-color: #dff0d8; /* Light green for a welcoming feel */
+  padding: 40px 20px;
+}
+
+/* Responsive Grid Layout for larger screens */
+@media (min-width: 992px) {
+  .home-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .section-content {
+    text-align: left;
+  }
+}
+@media (max-width: 992px) {
+  .platform-section,
+  .play-section {
+    padding-bottom: 20px;
+  }
+}
+
+:root {
+  --primary-color: #007bff; /* Blue for a vibrant, engaging look */
+  --accent-color: #ffc107; /* Yellow for highlights and call to action */
+  --text-color: #212529; /* Dark for readability */
+  --background-color: #f8f9fa; /* Light background for contrast */
+  --section-padding: 20px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+}
+
+.bcl-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bcl-intro {
+  background-color: #ffffff; /* Clean background */
+  border-radius: 8px; /* Soft edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Spacing around content */
+  margin: 20px 0; /* Space above and below */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.bcl-title {
+  color: #007bff; /* Eye-catching color for the title */
+  font-size: 2rem; /* Larger size for emphasis */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 15px; /* Space between title and description */
+  animation: fadeInUp 1s ease-out; /* Animation for the title */
+}
+
+.bcl-description {
+  color: #666; /* Soft color for readability */
+  line-height: 1.6; /* Improved readability */
+  text-align: justify; /* Justified text for a polished look */
+  animation: fadeIn 1.5s ease-out; /* Smooth fade-in for the text */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bcl-title {
+    font-size: 1.5rem; /* Adjust title size for smaller screens */
+  }
+  .bcl-intro {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Hover Effect */
+.bcl-intro:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.bcl-why-join {
+  background-color: #f9f9f9; /* Light background to differentiate the section */
+  padding: 20px;
+  border-radius: 8px; /* Soft, rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Vertical spacing */
+}
+
+.bcl-heading {
+  color: #0056b3; /* Vibrant color for headings */
+  font-size: 1.75rem; /* Emphasized font size */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.bcl-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.bcl-list li {
+  margin-bottom: 4px;
+  position: relative;
+  left: 0;
+  animation: slideIn 0.5s ease-out forwards; /* Animation for list items */
+  opacity: 0; /* Start items as invisible for animation */
+  text-align: center;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    left: -20px; /* Start slightly to the left */
+  }
+  to {
+    opacity: 1;
+    left: 0; /* End in the original position */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bcl-heading {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+  .bcl-list li {
+    padding: 8px 12px; /* Adjust padding for list items */
+  }
+}
+
+.bcl-how-to-join {
+  background-color: #fff; /* Clean background for focus */
+  padding: 20px;
+  border-radius: 8px; /* Soft, rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin: 20px 0; /* Space it from other content */
+}
+
+.bcl-heading {
+  font-size: 1.75rem; /* Large size for clear heading */
+  text-align: center; /* Central alignment for emphasis */
+  margin-bottom: 20px; /* Separate from list */
+}
+
+.bcl-steps {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  counter-reset: step-counter; /* CSS counter for step numbers */
+}
+
+.bcl-steps li {
+  counter-increment: step-counter; /* Increment counter for each list item */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #eef2f3; /* Slight contrast for each step */
+  border-radius: 5px; /* Rounded corners for style */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  position: relative;
+  padding-left: 35px; /* Space for step number */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.bcl-steps li::before {
+  content: counter(step-counter); /* Display step number */
+  position: absolute;
+  left: 10px; /* Position inside the padding area */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  background-color: #d35400; /* Background of the counter */
+  color: #fff; /* Text color */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Circle shape */
+  text-align: center;
+  line-height: 20px; /* Center the number vertically */
+}
+
+.bcl-steps li:hover {
+  background-color: #d6eaf8; /* Highlight on hover for interaction */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bcl-heading {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+  }
+  .bcl-steps li {
+    padding: 8px 12px; /* Smaller padding on small screens */
+    padding-left: 30px; /* Adjust for step number */
+  }
+  .bcl-steps li::before {
+    width: 18px; /* Slightly smaller counter circles */
+    height: 18px;
+    line-height: 18px; /* Adjust line height for number */
+  }
+}
+
+.bcl-join-us {
+  color: #0d0c0c; /* White text for contrast */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center; /* Center text for focus */
+  margin: rgb(1, 1, 1); /* Space from surrounding content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.bcl-heading {
+  font-size: 2rem; /* Large font size for impact */
+  margin-bottom: 20px; /* Space before the call to action */
+  font-weight: bold; /* Bold for emphasis */
+  text-transform: uppercase; /* Uppercase letters for a strong presence */
+  letter-spacing: 1.5px; /* Spacing for readability */
+  animation: fadeInDown 1s ease-out; /* Animation for the heading */
+}
+
+.bcl-call-to-action {
+  font-size: 1.2rem; /* Comfortable reading size */
+  margin: 0 auto; /* Center in the available space */
+  max-width: 600px; /* Max width for optimal reading */
+  line-height: 1.6; /* Line height for readability */
+  animation: fadeInUp 1s ease-out forwards; /* Animation for the text */
+  opacity: 0; /* Start invisible for animation */
+}
+
+/* Hover effects for engagement */
+.bcl-join-us:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bcl-join-us {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .bcl-heading {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+  .bcl-call-to-action {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+}

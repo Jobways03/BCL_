@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+.head,
+.head-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.head h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.head-top h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.head-top h2 {
+  font-size: 1.8rem;
+  color: #f6f4f4;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the registration button */
+.button-88 {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-88:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Add a hover effect to headings */
+.head h1:hover,
+.head-top h1:hover,
+.head-top h2:hover {
+  color: #ff8800;
+}
+
+.head-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/id/814905906/photo/stadium-floodlight.jpg?s=612x612&w=0&k=20&c=AzL55MHdLjvKLNm42qkzA3jtCGB9nYoCh0Senbyled4=");
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 40px 0px;
+}
+
+@media (max-width: 992px) {
+  /* .flexrt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  .card .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Adjust spacing between cards for smaller screens */
+  }
+
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center; /* Center align for smaller screens */
+  }
+
+  .col-lg-6 .flexrt {
+    flex-direction: column; /* Display items in a column for smaller screens */
+  }
+
+  .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 20px; /* Adjust spacing between columns for smaller screens */
+  }
+
+  .imgou {
+    text-align: center; /* Center align image */
+    margin-top: 20px; /* Adjust spacing between image and button */
+  }
+
+  .btn-live {
+    width: 100%; /* Make buttons full width */
+  }
+  .i {
+    margin-left: 10%;
+  }
+}
+
+.nav-link-highlight {
+  background-color: rgb(244, 123, 17); /* Blue background */
+  color: white !important; /* White text */
+  padding: 10px 15px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Make the font bold */
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.nav-link-highlight:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white !important; /* Keep text white on hover */
+  text-decoration: none; /* Remove underline on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-link-highlight {
+  animation: pulse 2s infinite;
+}
+
+/* Enhanced MatchSchedule.css */
+
+:root {
+  --bg-color: #f0f8ff;
+  --card-bg-color: #ffffff;
+  --primary-color: #007bff;
+  --secondary-color: #28a745;
+  --text-color-dark: #343a40;
+  --text-color-light: #ffffff;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--bg-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--bg-color);
+}
+
+.schedule-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.schedule-container::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.match-card {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  min-width: 300px;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 40px;
+}
+
+.match-info {
+  background: rgb(50, 60, 100);
+  color: var(--text-color-light);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 70px;
+}
+
+.match-name {
+  margin-top: 17px;
+}
+
+.match-datetime,
+.match-venue {
+  margin: 5px 0;
+}
+
+.team-vs-team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  height: 200px;
+  background-color: rgb(214, 212, 211);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.team-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.team-name {
+  color: var(--text-color-dark);
+  font-weight: bold;
+}
+
+.vs {
+  color: rgb(50, 60, 100);
+  font-weight: bold;
+  font-size: 44px;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .team-vs-team {
+    flex-direction: column;
+  }
+
+  .vs {
+    margin: 10px 0;
+  }
+
+  .match-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .match-name {
+    margin: 0;
+  }
+}
+
+.navbar {
+  background-color: rgb(110, 143, 235);
+}
+
+.nav-link:hover {
+  background-color: rgb(5, 4, 4);
+  text-decoration: underline;
+}

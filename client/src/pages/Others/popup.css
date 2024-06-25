@@ -1,0 +1,214 @@
+.ul li {
+  margin: 10px 0px;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(244, 188, 82);
+}
+#logo-2 {
+  border-radius: 50%;
+  border: 1px solid rgb(32, 31, 31);
+  min-width: 300px;
+  max-width: 480px;
+  opacity: 0.92;
+  transition: transform 5s ease-in;
+}
+
+#logo-2:hover {
+  transform: rotate(360deg);
+}
+
+#logo {
+  border-radius: 50%;
+}
+
+.inner-banne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  background-image: url("df.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-width: 350px;
+}
+
+@media (max-width: 902px) {
+  #logo-2 {
+    border-radius: 50%;
+    border: 1px solid rgb(32, 31, 31);
+    min-width: 300px;
+    max-width: 400px;
+    opacity: 0.92;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+#disclaimer {
+  font-family: "Exo 2", sans-serif;
+  background: rgb(237, 238, 240);
+  background: linear-gradient(
+    142deg,
+    rgb(152, 176, 236) 20%,
+    rgb(86, 118, 233) 80%
+  );
+}
+
+.heade {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0, -10deg);
+}
+
+.top-title {
+  order: 1;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.bottom-title {
+  order: 3;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.sweet-title {
+  order: 2;
+  color: #fde9ff;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+    9px 7px 1px #4af7ff;
+
+  span {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+        -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+      z-index: 1;
+    }
+
+    &:nth-child(1) {
+      padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2.25rem;
+    }
+  }
+}
+
+.disclaimer {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+/* Loader.css */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the loader appears on top of other content */
+  /* animation: fadeOut 5s ease-in-out forwards; Fade out animation */
+}
+
+.loader-animation {
+  width: 80px; /* Adjust the size of the animation */
+  height: 80px; /* Adjust the size of the animation */
+  border: 5px solid #f3f3f3; /* Loader border color */
+  border-top: 5px solid #3498db; /* Loader top border color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Rotation animation */
+}
+
+.loader-image {
+  height: fit-content;
+  position: absolute;
+  border-radius: 50%;
+  height: 440px;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px; /* Adjust the size of the loader image */
+  animation: fadeIn 1s ease-in-out forwards; /* Fade in animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Initial rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Initial opacity */
+  }
+  100% {
+    opacity: 1; /* Full opacity */
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Full opacity */
+  }
+  100% {
+    opacity: 0; /* Fade out opacity */
+  }
+}
+
+.hide {
+  display: none; /* Hide the loader */
+}

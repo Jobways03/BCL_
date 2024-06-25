@@ -1,0 +1,57 @@
+.points {
+  height: fit-content;
+}
+
+.ds {
+  margin-top: 270px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin: 1%;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #fbfcfc;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 15px;
+    display: block;
+    text-align: right;
+  }
+  th,
+  td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.tn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  margin-left: 40px;
+}

@@ -1,0 +1,71 @@
+/* Basic styles for the form elements */
+.form-group {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px);
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  max-width: 500px;
+  padding: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.matchname {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.dte {
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#delete {
+  background-color: #ff5555;
+}
+
+.option {
+  width: 320px;
+}
