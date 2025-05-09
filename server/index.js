@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // configuring environmental variables
 dotenv.config();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 const db_url = process.env.DATABASE_URL;
 const con = process.env.NODE_ENV;
 
